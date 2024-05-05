@@ -13,10 +13,10 @@
 let arr = [6,7,10,11,13];
 let lnth= arr.length;
 
-let diff = arr[0]- 0;
+let diff = arr[0];
 
 for (let i = 0; i < lnth; i++) {
-    console.log(arr[i]-i);
+    // console.log("value of diff"+diff);
     if (arr[i]-i != diff) {
         while(diff < arr[i]-i){
             console.log(i+diff+" ");
