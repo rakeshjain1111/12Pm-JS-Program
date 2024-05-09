@@ -1,10 +1,8 @@
-//let arr = [12,67,78,45,54,30];
-let arr =[10,14,2,56,24,55,6];
+let arr = [12,67,78,45,54,30];
+//let arr =[10,14,2,56,24,55,6];
 let lnth =arr.length;
 let temp = null;
-let small = 0, large = lnth - 1; 
-let tempArry = new Array(lnth);
-let flag =true;
+
 
 console.log("Given Array is : "+arr);
 
@@ -18,12 +16,18 @@ for (let i = 0; i < lnth; i++) {
    }
 }
 
+let small = 0, large = lnth - 1; 
+let tempArry = new Array(lnth);
+let flag =true;
+
 for (let i = 0; i < lnth; i++) { 
     if (flag) {
-        tempArry[i] = arr[large--];
+        tempArry[i] = arr[large];
+        large--;
     } 
     else{
-        tempArry[i] = arr[small++]; 
+        tempArry[i] = arr[small];
+        small++; 
     }
     flag = !flag; 
 } 

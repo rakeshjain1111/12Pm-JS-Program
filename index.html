@@ -1,64 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
+<html>
 <body>
-    <script> 
 
-        // JavaScript Program to replace every element with the greatest 
-        // element on right side 
-        
-        /* Function to replace every element with the 
-        next greatest element */
-        function nextGreatest(arr,size) 
-        { 
-                
-            // Initialize the next greatest element 
-            max_from_right = arr[size-1]; 
-                
-            // The next greatest element for the rightmost element 
-            // is always -1 
-            arr[size-1] = -1; 
-                
-            // Replace all other elements with the next greatest 
-            for(let i = size-2; i >= 0; i--) 
-            { 
-                // Store the current element (needed later for updating 
-                // the next greatest element) 
-                temp = arr[i]; 
-                
-                // Replace current element with the next greatest 
-                arr[i] = max_from_right; 
-                
-                // Update the greatest element, if needed 
-                if(max_from_right < temp) 
-                max_from_right = temp; 
-            } 
-        } 
-            
-        /* A utility Function that prints an array */
-            function printArray(arr,size) 
-        { 
-            var i; 
-            for ( let i = 0; i < size; i++) 
-            document.write(arr[i] + " " ); 
-        } 
-            
-        /* Driver program to test above function */
-        
-            arr = new Array (16, 17, 4, 3, 5, 2); 
-            size = arr.length; 
-            nextGreatest (arr, size); 
-            document.write ("The modified array is: " + "<br>"+ " \n"); 
-                
-            printArray (arr, size); 
-            
-            // This code is contributed by simranarora5sos 
-            
-        </script>
-        
-    <script src="findAllMissingNumber.js"></script>
+<h2>Checkboxes</h2>
+<p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+
+<form action="/action_page.php" method="post">
+    <input type="text" id="html" name="fav_language" >
+      
+      <input type="submit" value="Submit">
+</form> 
+
 </body>
 </html>
